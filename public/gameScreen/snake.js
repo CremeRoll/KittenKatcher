@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	//Canvas stuff
-	console.log("HI");
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext("2d");
 	var w = $("#canvas").width();
@@ -123,8 +122,11 @@ $(document).ready(function(){
 	
 	//Lets first create a generic function to paint cells
 	function paint_cell(x, y)
-	{
-		ctx.fillStyle = "blue";
+	{	
+		var blueprint_background = new Image();
+			blueprint_background.src = '../pics/Keety.png'; 
+		var pattern = context.createPattern(blueprint_background, "no-repeat");
+		ctx.fillStyle = pattern;
 		ctx.fillRect(x*cw, y*cw, cw, cw);
 		ctx.strokeStyle = "white";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
