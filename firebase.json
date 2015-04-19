@@ -1,0 +1,9 @@
+{
+  "firebase": "glowing-torch-1052",
+  "public": "C:\\Users\\leslie\\Documents\\GitHub\\KittenKatcher\\public\\gameScreen",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
